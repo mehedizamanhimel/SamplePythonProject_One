@@ -103,5 +103,26 @@ def taxcalculate(price):
 
 taxcalculate(10)
 
-#calculating a weather from given string
+#writing a function to calculate a weather from given string
+def number_to_celcius(x):
+    return (x-32)*5/9
+
+for x in range (0,101,10):
+    print(x, number_to_celcius(x))
+
+
+#generating a lucky number from a given name
+def generateLuckyNumber(name):
+    luckynumber=len(name)*3
+    print(f'hi {name}, you lucky number is :{luckynumber}'.format(name=name,luckynumber=luckynumber))
+
+generateLuckyNumber('himel')
+
+
+def to_celsius(x):
+  return (x-32)*5/9
+
+for x in range(0,101,10):
+  print("{:>3} F | {:>6.2f} C".format(x, to_celsius(x)))
+  #the expression {:>3.2f} would align the text three spaces to the right, as well as specify a float number with two decimal places.
 
