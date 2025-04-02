@@ -11,4 +11,6 @@ print(b+c)
 print(a+d)
 
 
+print(6>9)
 
+print(100//10==0)

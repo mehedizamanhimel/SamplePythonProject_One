@@ -1,4 +1,3 @@
-from operator import index
 
 str='abcdefghijk'
 
@@ -126,3 +125,27 @@ for x in range(0,101,10):
   print("{:>3} F | {:>6.2f} C".format(x, to_celsius(x)))
   #the expression {:>3.2f} would align the text three spaces to the right, as well as specify a float number with two decimal places.
 
+for c in "abcde":
+    print(c)
+
+#print particular character of a string by index value
+print("abcde"[2])
+print("abcde"[-1])
+
+#applying left strip, right strip and whole strip
+print(" Hello ".lstrip())
+print(" Hello ".rstrip())
+print(" Hello ".strip())
+
+
+def checkstring(str1,str2):
+    if str1==str2:
+        return True
+    else:
+        return False
+print(checkstring('ee','dd'))
+print(checkstring('dd','dd'))
+
+
+Weather = "Rainfall"
+print(Weather[:4])
